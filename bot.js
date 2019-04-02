@@ -22,4 +22,11 @@ client.on('message', message => {
   }
   });
 
+client.on('message', message => {
+     if (message.author.bot) return;
+	 if(message.content == "$type"){
+  message.channel.stopTyping();
+  }
+  });
+
 client.login(process.env.BOT_TOKEN);
