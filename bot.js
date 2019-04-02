@@ -51,12 +51,6 @@ client.on("message", message => {
                               }
                               });
 
-client.on("guildMemberAdd", (member) => {
-          client.channels.get('562736264827371521').edit({name : `Members :->
-          ${member.guild.membercount} <- `});
-          })
-           client.on("guildMemberRemove", (member) => {
-           client.channels.get('562736264827371521').edit({name : `Members : -> ${member.guild.membercount} <-
-            })
+
 
 client.login(process.env.BOT_TOKEN);
