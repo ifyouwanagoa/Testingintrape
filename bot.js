@@ -29,11 +29,11 @@ client.on('message', message => {
   }
   });
 
-client.on('message') , msg => {
-              var prefix = "$" ;
-   if(msg.content.startsWith(prefix + "msgcount")) {
-msg.channel.fetchMessage()
-  .then(messages => msg.channel.send(`Message Count
+client.on('message' , message => {
+    var prefix = "$";
+   if(message.content.startsWith(prefix + "msgcount")) {
+message.channel.fetchMessages()
+	.then(messages => message.channel.send(`Message Count
 ${messages.size} `))
   .catch(console.error);
   }
