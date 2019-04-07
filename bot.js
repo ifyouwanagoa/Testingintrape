@@ -11,6 +11,26 @@ client.user.setGame(`♥Testing Bot♥ | use::help `,'https://www.twitch.tv/ℕ 
 
 
 
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'ping,hi') {
+    msg.reply('Pong!');
+  }
+});
+
+
+
+
+
+
 client.on('message', message => {
 let emoji = client.guilds.get("528877245859627027").emojis.find(r => r.name === "rr");
 let emoji2 = client.guilds.get("528877245859627027").emojis.find(r => r.name === "4410_RainbowNitro");
