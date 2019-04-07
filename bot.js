@@ -12,9 +12,9 @@ client.user.setGame(`♥Testing Bot♥ | use::help `,'https://www.twitch.tv/ℕ 
 
 client.on('message', message => {
 let emoji = client.guilds.get("528877245859627027").emojis.find(r => r.name === "rr");
-let emoji2 = client.guilds.get("528877245859627027").emojis.find(r => r.name === "4410_RainbowNitro");
+let emoji2 = client.guilds.get("528877245859627027").emojis.find(r => r.name === "Fire");
 let emoji3 = client.guilds.get("528877245859627027").emojis.find(r => r.name === "ll");
-let emoji4 = client.guilds.get("528877245859627027").emojis.find(r => r.name === "googleassistant");
+let emoji4 = client.guilds.get("528877245859627027").emojis.find(r => r.name === "4410_RainbowNitro");
 
               var prefix = ":" ;
 if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send The Help In DMS // Code By Magic0
